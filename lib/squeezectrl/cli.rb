@@ -29,6 +29,11 @@ module Squeezectrl
       perform_action "play"
     end
 
+    desc "version", "Show version of this tool"
+    def version
+      puts "#{$PROGRAM_NAME} version #{Squeezectrl::VERSION}"
+    end
+
     private
 
     def perform_action(button)
