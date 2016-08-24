@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "CLI for mysqueezebox.com remote control feature"
   spec.description   = "Use remote control feature from mysqueezebox.com from your terminal"
-  spec.homepage      = "https://www.klaus-meyer.net"
+  spec.homepage      = "https://github.com/klausmeyer/squeezectrl"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
