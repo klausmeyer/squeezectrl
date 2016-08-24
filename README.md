@@ -4,7 +4,10 @@ CLI for mysqueezebox.com remote control feature
 
 ## Installation & Usage
 
-Requirement: The language of your mysqueezebox.com account needs to be set to English in order to get this to work.
+Requirements:
+
+* PhantomJS needs to be installed on your system - see [README of poltergeist gem](https://github.com/teampoltergeist/poltergeist#installing-phantomjs)
+* The language of your mysqueezebox.com account needs to be set to English in order to get this to work.
 
 1. Install via rubygems:
 
