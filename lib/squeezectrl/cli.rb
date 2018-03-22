@@ -5,8 +5,11 @@ require "ostruct"
 require "thor"
 require "yaml"
 
-Capybara.current_driver    = :poltergeist
-Capybara.javascript_driver = :poltergeist
+Capybara.register_driver :poltergeist do |app|
+  Capybara::Poltergeist::Driver.new(app, js_errors: false)
+end
+
+Capybara.default_driver    = :poltergeist
 Capybara.run_server        = false
 Capybara.app_host          = "http://mysqueezebox.com"
 
