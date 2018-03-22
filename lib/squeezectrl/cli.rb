@@ -11,7 +11,7 @@ end
 
 Capybara.default_driver    = :poltergeist
 Capybara.run_server        = false
-Capybara.app_host          = "http://mysqueezebox.com"
+Capybara.app_host          = "https://www.mysqueezebox.com"
 
 module Squeezectrl
   class Cli < Thor
@@ -73,4 +73,3 @@ module Squeezectrl
     end
   end
 end
-
